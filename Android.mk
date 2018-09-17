@@ -14,7 +14,7 @@ BUSYBOX_WARNING_HIDE := -Wno-error=implicit-function-declaration -Wno-implicit-f
 include $(CLEAR_VARS)
 LOCAL_SRC_FILES := android/regex/bb_regex.c
 LOCAL_C_INCLUDES := $(BB_PATH)/android/regex
-LOCAL_CFLAGS := -Wno-sign-compare -Wno-unused-variable -Wno-unused-variable
+LOCAL_CFLAGS := -Wno-sign-compare -Wno-unused-variable -Wno-unused-parameter
 LOCAL_MODULE := libclearsilverregex
 include $(BUILD_STATIC_LIBRARY)
 
